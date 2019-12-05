@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chetanya Kunndra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<!--    <div id="loading">
+        <div id="spinner"></div>
+    </div> -->
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">work</a>
+    <a id="projects" onclick="showprojects()" class="animated fadeIn" style="animation-delay:2.2s;">projects</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>Chetanya Kunndra</h1>
+        <h2>Software Developer / Cyber Security Enthusiast / Human</h2>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">work</a>
+            <a onclick="showprojects()">projects</a>
+        </div>
+        <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-facebook"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"><i class="fab fa-twitter"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"><i class="fab fa-instagram"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"><i class="fab fa-linkedin"></i></a></td>
+                </tr>
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>works.</h1>
+        <section>
+            <h2>Intern</h2>
+            <h3>Computer Emergency Response Team - India</h3>
+            <h3>September 2019 - Present</h3>
+            <p>
+                - Developed tools and applications using various technologies.<br />
+                - Familiarized with Malware Analysis.<br/>
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;PHP</div>
+                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+                <div><i class="fas fa-circle"></i>&nbsp;MySQL</div>
+            </div>
+        </section>
+        <section>
+            <h2>Intern</h2>
+            <h3>National Critical Information Infrastructure Protection Center</h3>
+            <h3>June 2019 - August 2019</h3>
+            <p>
+                - Developed a Research Honeypot System using Python <br />
+                - Familiarized with network attacks and various mitigation techniques.<br/>
+                - Familiarized with creating networks and regulating traffic flow through the network<br/>
+                - Familiarized with socket library, AES Encryption Algorithm, Ubuntu
+                File System, service creation and obfuscation of scripts. <br/>
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;Python 3</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Kali Linux</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Ubuntu</div>
+                <div><i class="fas fa-circle"></i>&nbsp;AES Encryption</div>
+            </div>
+        </section>
+        <section>
+            <h2>Intern</h2>
+            <h3>Rites Ltd.</h3>
+            <h3>June 2018 - July 2018</h3>
+            <p>
+                - Developed a small e-commerce website using PHP, MySQL, HTML and CSS <br />
+                - Familiarized and self learned PHP to accomplish the task.
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;PHP</div>
+                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+                <div><i class="fas fa-circle"></i>&nbsp;MySQL</div>
+            </div>
+        </section>
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>about.</h1>
+            <section>
+                <h2>about me</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </section>
+            <di/div>
+                <h2>skills</h2>
+                <div style="width: 100%; columns: 3; column-gap: 4%; z-index: 1; transition: 0.4s ease-in-out;">
+                <p>
+                    <strong>- Coding Languages -    </strong> <br /><br />
+                        &emsp;- Python    <br />
+                        &emsp;- Core JAVA <br />
+                        &emsp;- C++   <br />
+                        &emsp;- C <br />
+                        &emsp;- Solidity  <br /><br /><br />
+                    
+                    <strong>- Web Development - </strong> <br /><br />
+                        &emsp;- HTML  <br />
+                        &emsp;- CSS   <br />
+                        &emsp;- Django    <br />
+                        &emsp;- Bootstrap <br />
+                        &emsp;- WordPress <br />
+                        &emsp;- PHP   <br />
+                        &emsp;- Bootstrap Studio  <br />
+                        &emsp;- JavaScript    <br /><br /><br />
+                    
+                    <strong>- Operating Systems -   </strong> <br />
+                        &emsp;- Kali Linux    <br />
+                        &emsp;- Ubuntu    <br />
+                        &emsp;- Windows   <br />
+                        &emsp;- Any Debian based OS   <br /><br /><br />
+                </p>
+                <p>
+                    <strong>- Database Management - </strong> <br /><br />
+                        &emsp;- MySQL <br />
+                        &emsp;- MariaDB   <br />
+                        &emsp;- phpMyAdmin    <br /><br /><br />
+
+                    <strong>- Other Technical Skills -  </strong> <br /><br />
+                        &emsp;- Graphic Designing <br />
+                            &emsp;&emsp;- Adobe Photoshop   <br /><br />
+                        &emsp;- Audio Video Editing   <br />
+                            &emsp;&emsp;- Sony Vegas Pro    <br />
+                            &emsp;&emsp;- Adobe After Effects   <br /><br />
+                        &emsp;- MS Office <br /><br /><br />
+                </p>
+                </div>
+            </section>
+        </div>
+          <div id="projects_container" class="container">
+            <div onclick="closeprojects()"><i class="fas fa-angle-down"></i></div>
+            <h1>projects.</h1>
+            <section>
+                <h2>Intrusion Detection and Research Honeypot System</h2>
+                <h3>2019</h3>
+                <p>
+                    - Developed a signature based Network Intrusion Detection System(NIDS) using python 3. <br />
+                    - Developed a Research Honeypot System using python 3.<br />
+                    - Developed the entire network consisting of a NIDS, Research Honeypot System, a central log server and the actual server.<br/>  
+                </p>
+                <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;Python 3</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;socket</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;AES Encryption</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Ubuntu</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Kali Linux</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;base64</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;MaxMind IPGeoLite</div>
+                </div>
+            </section>
+            <section>
+                <h2>Intern</h2>
+                <h3>National Critical Information Infrastructure Protection Center</h3>
+                <h3>June 2019 - August 2019</h3>
+                <p>
+                    - Developed a Research Honeypot System using Python <br />
+                    - Familiarized with network attacks and various mitigation techniques.<br/>
+                    - Familiarized with creating networks and regulating traffic flow through the network<br/>
+                    - Familiarized with socket library, AES Encryption Algorithm, Ubuntu
+                    File System, service creation and obfuscation of scripts. <br/>
+                </p>
+                <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;Python 3</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Kali Linux</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Ubuntu</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;AES Encryption</div>
+                </div>
+            </section>
+            <section>
+                <h2>BlockChain based Voting System</h2>
+                <h3>2019</h3>
+                <p>
+                    - Developed a small e-commerce website using PHP, MySQL, HTML and CSS <br />
+                    - Familiarized and self learned PHP to accomplish the task.
+                </p>
+                <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;PHP</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Solidity</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;MySQL</div>
+                </div>
+            </section>
+            <section>
+                <h2>Let It Out (<a style="color: white;" href="https://letitout.me" target="blank">Link</a>)</h2>
+                <h3>2019</h3>
+                <p>
+                    - A small scale website built for a small event managment company using HTML, CSS and JavaScript.
+                </p>
+                <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;JavaScript</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;JQuery</div>
+                </div>
+            </section>
+            <section>
+                <h2>Accountant Anywhere (<a style="color: white;" href="https://www.accountant-anywhere.com/" target="blank">Link</a>)</h2>
+                <h3>2019</h3>
+                <p>
+                    - Built the website for a client using wordpress and visual composer.<br />
+                    - Added custom CSS and JS to the site.
+                </p>
+                <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;WordPress</div>
+                </div>
+            </section>
+            <section>
+                <h2>Innoviz 2019 (<a style="color: white;" href="innoviz.adgitmdelhi.ac.in" target="blank">Link</a>)</h2>
+                <h3>2019</h3>
+                <p>
+                    - Built the website for a client using wordpress and visual composer.<br />
+                    - Added custom CSS and JS to the site.
+                </p>
+                <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;WordPress</div>
+                </div>
+            </section>
+        </div>
+        <div id="footer">
+            made on earth by a human <br> <a href="https://imfunniee.github.io">imfunniee</a>
+        </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
